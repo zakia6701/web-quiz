@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Coding Quiz</title>
+
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+
+  <body>
+    <div class="timer">Time: <span id="time">10</span></div>
+
+    <div class="wrapper">
+      <div id="main-page" class="begin">
+        <h1>web quiz</h1>
+        <p>
+          Welcome to the hardest JavaScript quiz on the world wide web. Good luck
+        </p>
+        <button id="begin">Start Quiz</button>
+      </div>
+
+      <div id="questions" class="hide">
+        <h2 id="questions-title"></h2>
+        <div id="option" class="option"></div>
+      </div>
+
+      <div id="end-page" class="hide">
+        <h2>Quiz Completed!</h2>
+        <p>Your final score is <span id="final-score"></span>.</p>
+        <p>
+          Enter Your Initials: <input type="text" id="initials" min="3" max="3" />
+          <button id="submit">Save Score</button>
+        </p>
+      </div>
+
+      <div class="scores"><a href="topscore.html">View Top scores</a></div>
+      <div id="reply" class="reply hide"></div>
+    </div>
+
+    <script src="JS/questions.js"></script>
+    <script src="JS/script.js"></script>
+
+
+<footer class="footer">
+  <p>Zaki Studios©</p>
+</footer>
+</body>
+</html>
