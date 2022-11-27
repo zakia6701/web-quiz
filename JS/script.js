@@ -2,7 +2,7 @@
 let timerEl = document.querySelector("#time");
 let choiceEl = document.querySelector("#option");
 let subBtn = document.querySelector("#submit");
-let repyEl = document.querySelector("#reply");
+let replyEl = document.querySelector("#reply");
 let startBtn = document.querySelector("#begin");
 let questionsEl = document.querySelector("#questions");
 let initialsEl = document.getElementById("initials");
@@ -54,7 +54,7 @@ function getQuestions() {
     choiceNode.onclick = questionsClick;
 
     // display on the page
-    optionElement.appendChild(choiceNode);
+    choiceEl.appendChild(choiceNode);
   });
 }
 
@@ -114,7 +114,7 @@ function endQuiz() {
 function clockTick() {
   // update time
   time--;
-  timerElement.textContent = time;
+  timerEl.textContent = time;
 
   // check if user ran out of time
   if (time <= 0) {
@@ -157,7 +157,7 @@ function checkForEnter(event) {
 }
 
 // submit initials
-submBtn.addEventListener("click", saveTopscore);
+subBtn.addEventListener("click", saveTopscore);
 
 // begin quiz
 

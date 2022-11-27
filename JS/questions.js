@@ -1,5 +1,3 @@
-// Question bank, option = Multiple Choice Questions and Answers
-
 var questions= [
  
     // QUESTION 1  
